@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Web Site</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon02.png">
+    <link rel="stylesheet" href="style.css">
+    <script src="scripts.js"></script>
+
+</head>
+<body>
+    <header>
+        <a href="#" class="logo-holder">
+            <div class="logo">M</div>
+            <div class="logo-text">Portfolio Website</div>
+        </a>
+        <nav>
+            <ul id="menu">
+                <li>
+                    <a href="#">Home</a>
+                </li>
+                <li>
+                    <a href="#skills">Skills</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#" class="button">Contact Me</a>
+                </li>
+            </ul>
+            <a href="#" class="mobile-toggle" onclick="toggleMobileMenu()">
+                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
+                  </svg>                  
+            </a>
+        </nav>
+    </header>
+    
+
+    <main>
+        <section class="hero container">
+            <div class="hero-blue">
+                <div>
+                    <h1>
+                        <small>Hi I'm</small>
+                        Madhav Bohra
+                    </h1>
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum optio quos magnam ut esse quam officiis placeat, nihil sunt facere.<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel dolore facilis amet dolor rerum corrupti saepe, vitae expedita mollitia!</span>
+                    </p>
+                    <div class="call-to-action">
+                        <a href="#" class="button black">
+                            View Resume
+                        </a>
+                        <a href="#" class="button white">
+                            Contact Me
+                        </a>
+                    </div>
+                    <div class="social-links">
+                        <a href="#">
+                            <img src="/imgs/github.png" alt="GitHub" width="48">
+                        </a>
+                        <a href="#">
+                            <img src="/imgs/linkedin.png" alt="LinkedIn" width="48">
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="hero-yellow">
+                <img src="/imgs/hero-image01.png" alt="Madhav Bohra" width="100%">
+            </div>
+        </section>
+        <section class="logos container">
+            <div class="marquee">
+                <div class="track">
+                    <!-- Need to add more logos  -->
+                    <img src="/imgs/html.png" alt="HTML" width="128">
+                    <img src="/imgs/css.png" alt="CSS" width="128">
+                    <img src="/imgs/javascript.png" alt="Javascript" width="128">
+                    <img src="/imgs/python.png" alt="Python" width="128">
+                    <img src="/imgs/react.png" alt="React" width="128">
+                    <img src="/imgs/html.png" alt="HTML" width="128">
+                    <img src="/imgs/css.png" alt="CSS" width="128">
+                    <img src="/imgs/javascript.png" alt="Javascript" width="128">
+                    <img src="/imgs/python.png" alt="Python" width="128">
+                    <img src="/imgs/react.png" alt="React" width="128">
+                </div>
+            </div>
+        </section>
+        <section id="skills" class="skills container">
+            <h2>
+                <small>About Me</small>
+                Skills
+            </h2>
+            <div class="holder-blue">
+                <div class="left-column">
+                    <h3>Frontend</h3>
+                    <ul>
+                        <li>HTML</li>
+                        <li>CSS</li>
+                        <li>JavaScript</li>
+                    </ul>
+                    <h3>Backend</h3>
+                    <ul>
+                        <li>Node.js</li>
+                        <li>Express</li>
+                        <li>Django</li>
+                    </ul>
+                </div>
+                <div class="right-column">
+                    <h3>A bit about me</h3>
+                    <p>Hi I'm Madhav Bohra, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia qui sunt eum voluptatum corporis voluptate quo autem at ullam obcaecati!</p>
+                </div>
+            </div>
+        </section>
+        <section class="work-experience container">
+            <h2>
+                <small>Recent</small>
+                Work Experience
+            </h2>
+            <div class="jobs">
+                <article>
+                    <figure>
+                        <div>
+                            <img src="/imgs/workplace-1.jpg" alt="" width="100%"/>
+                            <figcaption>
+                                workplace-1
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <h3>Workplace - 1</h3>
+                    <div>2000-2020</div>
+                    <p>
+                        This is an example description for a workplace.
+                    </p>
+                </article>
+                <article>
+                    <figure>
+                        <div>
+                            <img src="/imgs/workplace-2.jpg" alt="" width="100%"/>
+                            <figcaption>
+                                workplace-2
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <h3>Workplace - 2</h3>
+                    <div>2000-2020</div>
+                    <p>
+                        This is an example description for a workplace.
+                    </p>
+                </article>
+                <article>
+                    <figure>
+                        <div>
+                            <img src="/imgs/workplace-3.jpg" alt="" width="100%"/>
+                            <figcaption>
+                                workplace-3
+                            </figcaption>
+                        </div>
+                    </figure>
+                    <h3>Workplace - 3</h3>
+                    <div>2000-2020</div>
+                    <p>
+                        This is an example description for a workplace.
+                    </p>
+                </article>
+            </div>
+        </section>
+        <!-- Needs to be changed -->
+        <!-- change div to a tag in the html  -->
+        <section id="projects" class="bento">
+            <h2>
+                <small>
+                    Previous
+                </small>
+                Completed Projects
+            </h2>
+            <div class="bento-grid">
+                <div class="bento-item">
+                    <img src="/imgs/bento-1.jpg" alt="" width="100%"/>
+                </div>
+                <div class="bento-item"><img src="/imgs/bento-2.jpg" alt="" width="100%"/></div>
+                <div class="bento-item"><img src="/imgs/bento-3.jpg" alt="" width="100%"/></div>
+                <div class="bento-item"><img src="/imgs/bento-4.jpg" alt="" width="100%"/></div>
+                <div class="bento-item"><img src="/imgs/bento-5.jpg" alt="" width="100%"/></div>
+                <div class="bento-item"><img src="/imgs/bento-6.jpg" alt="" width="100%"/></div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
