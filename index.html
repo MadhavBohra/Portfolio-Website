@@ -3,47 +3,51 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio Web Site</title>
+    <title>Madhav Bohra - Portfolio</title>
 
+    <!-- Preconnect to optimize font loading -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap" rel="stylesheet">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/x-icon" href="imgs/favicon02.png">
+    
+    <!-- Stylesheets -->
     <link rel="stylesheet" href="style.css">
-    <script src="scripts.js"></script>
-
+    
+    <!-- Scripts -->
+    <script defer src="scripts.js"></script>
 </head>
 <body>
+    <!-- Header Navigation -->
     <header>
         <a href="#" class="logo-holder">
             <div class="logo">M</div>
-            <div class="logo-text">Portfolio Website</div>
+            <div class="logo-text">Portfolio</div>
         </a>
         <nav>
+            <!-- Main Navigation Menu -->
             <ul id="menu">
-                <li>
-                    <a href="#">Home</a>
-                </li>
-                <li>
-                    <a href="#skills">Skills</a>
-                </li>
-                <li>
-                    <a href="#projects">Projects</a>
-                </li>
-                <li>
-                    <a href="#" class="button">Contact Me</a>
-                </li>
+                <li><a href="#">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact" class="button">Contact Me</a></li>
             </ul>
+            
+            <!-- Mobile Menu Toggle -->
             <a href="#" class="mobile-toggle" onclick="toggleMobileMenu()">
-                <svg class="w-6 h-6 text-gray-800 dark:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24">
                     <path stroke="currentColor" stroke-linecap="round" stroke-width="2" d="M5 7h14M5 12h14M5 17h14"/>
-                  </svg>                  
+                </svg>
             </a>
         </nav>
     </header>
-    
 
     <main>
+        <!-- Hero Section -->
         <section class="hero container">
             <div class="hero-blue">
                 <div>
@@ -52,21 +56,19 @@
                         Madhav Bohra
                     </h1>
                     <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nostrum optio quos magnam ut esse quam officiis placeat, nihil sunt facere.<span>Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum vel dolore facilis amet dolor rerum corrupti saepe, vitae expedita mollitia!</span>
+                        A passionate developer with expertise in web technologies and machine learning.</p>
+                    <p>    
+                        I create innovative solutions that bridge creativity and technical excellence.
                     </p>
                     <div class="call-to-action">
-                        <a href="#" class="button black">
-                            View Resume
-                        </a>
-                        <a href="#" class="button white">
-                            Contact Me
-                        </a>
+                        <a href="static/resume.pdf" class="button black" target="_blank">View Resume</a>
+                        <a href="#contact" class="button white">Contact Me</a>
                     </div>
                     <div class="social-links">
-                        <a href="#">
+                        <a href="https://github.com/MadhavBohra" target="_blank">
                             <img src="imgs/github.png" alt="GitHub" width="48">
                         </a>
-                        <a href="#">
+                        <a href="https://www.linkedin.com/in/madhav-bohra-b81b6b248/" target="_blank">
                             <img src="imgs/linkedin.png" alt="LinkedIn" width="48">
                         </a>
                     </div>
@@ -76,23 +78,40 @@
                 <img src="imgs/hero-image01.png" alt="Madhav Bohra" width="100%">
             </div>
         </section>
+
+        <!-- Technology Marquee -->
         <section class="logos container">
             <div class="marquee">
                 <div class="track">
-                    <!-- Need to add more logos  -->
-                    <img src="imgs/html.png" alt="HTML" width="128">
-                    <img src="imgs/css.png" alt="CSS" width="128">
-                    <img src="imgs/javascript.png" alt="Javascript" width="128">
-                    <img src="imgs/python.png" alt="Python" width="128">
-                    <img src="imgs/react.png" alt="React" width="128">
-                    <img src="imgs/html.png" alt="HTML" width="128">
-                    <img src="imgs/css.png" alt="CSS" width="128">
-                    <img src="imgs/javascript.png" alt="Javascript" width="128">
-                    <img src="imgs/python.png" alt="Python" width="128">
-                    <img src="imgs/react.png" alt="React" width="128">
+                    <!-- Technology Logos - Duplicated for continuous scroll -->
+                    <img src="imgs/marquee/html.png" alt="HTML" width="128">
+                    <img src="imgs/marquee/css.png" alt="CSS" width="128">
+                    <img src="imgs/marquee/javascript.png" alt="Javascript" width="128">
+                    <img src="imgs/marquee/python.png" alt="Python" width="128">
+                    <img src="imgs/marquee/pytorch.png" alt="PyTorch" width="128">
+                    <img src="imgs/marquee/Tensorflow.png" alt="Tensorflow" width="128">
+                    <img src="imgs/marquee/django.png" alt="Django" width="128">
+                    <img src="imgs/marquee/react.png" alt="React" width="128">
+                    <img src="imgs/marquee/nodejs.png" alt="NodeJS" width="128">
+                    <img src="imgs/marquee/nextjs.png" alt="NextJS" width="128">
+                    <img src="imgs/marquee/nestjs.png" alt="NestJS" width="128">
+                    <!-- Repeat logos for seamless scrolling -->
+                    <img src="imgs/marquee/html.png" alt="HTML" width="128">
+                    <img src="imgs/marquee/css.png" alt="CSS" width="128">
+                    <img src="imgs/marquee/javascript.png" alt="Javascript" width="128">
+                    <img src="imgs/marquee/python.png" alt="Python" width="128">
+                    <img src="imgs/marquee/pytorch.png" alt="PyTorch" width="128">
+                    <img src="imgs/marquee/Tensorflow.png" alt="Tensorflow" width="128">
+                    <img src="imgs/marquee/django.png" alt="Django" width="128">
+                    <img src="imgs/marquee/react.png" alt="React" width="128">
+                    <img src="imgs/marquee/nodejs.png" alt="NodeJS" width="128">
+                    <img src="imgs/marquee/nextjs.png" alt="NextJS" width="128">
+                    <img src="imgs/marquee/nestjs.png" alt="NestJS" width="128">
                 </div>
             </div>
         </section>
+
+        <!-- Skills Section -->
         <section id="skills" class="skills container">
             <h2>
                 <small>About Me</small>
@@ -100,98 +119,186 @@
             </h2>
             <div class="holder-blue">
                 <div class="left-column">
-                    <h3>Frontend</h3>
+                    <h3>Technologies</h3>
+
+                    <h4>Frontend</h4>
                     <ul>
                         <li>HTML</li>
                         <li>CSS</li>
                         <li>JavaScript</li>
+                        <li>React.js</li>
+                        <li>Next.js</li>
                     </ul>
-                    <h3>Backend</h3>
+                    
+                    <h4>Backend</h4>
                     <ul>
-                        <li>Node.js</li>
-                        <li>Express</li>
+                        <li>Nest.js</li>
                         <li>Django</li>
+                        <li>FastAPI</li>
+                        <li>Spring Boot</li>
                     </ul>
+                    
+                    <h4>Databases</h4>
+                    <ul>
+                        <li>PostgreSQL</li>
+                        <li>MongoDB</li>
+                    </ul>
+                    <h4>DevOps & Tools</h4>
+                    <ul>
+                        <li>Docker</li>
+                        <li>Git</li>
+                        <li>AWS</li>
+                        <li>Firebase</li>
+                    </ul>
+                    
                 </div>
                 <div class="right-column">
-                    <h3>A bit about me</h3>
-                    <p>Hi I'm Madhav Bohra, Lorem ipsum dolor sit amet consectetur adipisicing elit. Quia qui sunt eum voluptatum corporis voluptate quo autem at ullam obcaecati!</p>
+                    <h3>About Me</h3>
+                    <p>
+                        Hey there! I'm <strong>Madhav Bohra</strong>, a passionate <strong>Full Stack Developer</strong> and <strong>Machine Learning Engineer</strong> with a knack for building scalable applications and AI-driven solutions. 
+                        Whether it’s crafting sleek <strong>frontend interfaces with Next.js</strong> or architecting robust <strong>backend systems using Nest.js and Django</strong>, 
+                        I thrive on turning ideas into reality with clean, efficient code.
+                    </p>
+                    
+                    <p>
+                        Beyond coding, you’ll find me <strong>hitting PRs—both in the gym and on GitHub</strong>.  
+                        Strength and self-improvement are my daily grind—whether it's pushing my limits in weightlifting or refining my craft in software development.  
+                        I believe in constant growth, both physically and professionally.
+                    </p>
+                    
                 </div>
             </div>
         </section>
-        <section class="work-experience container">
+
+        <!-- Work Experience Section -->
+        <!-- Work Experience Section -->
+        <section id="experience" class="work-experience container">
             <h2>
                 <small>Recent</small>
                 Work Experience
             </h2>
             <div class="jobs">
-                <article>
+                <article onclick="window.open('https://drive.google.com/file/d/1oGBYqHJk3LqGpgBJW7O9BM6R33Z35b51/view?usp=drive_link', '_blank')">
                     <figure>
-                        <div>
-                            <img src="imgs/workplace-1.jpg" alt="" width="100%"/>
-                            <figcaption>
-                                workplace-1
-                            </figcaption>
-                        </div>
+                        <img src="imgs/workplace/workplace-1.png" alt="MyEasyPharma" width="100%"/>
                     </figure>
-                    <h3>Workplace - 1</h3>
-                    <div>2000-2020</div>
-                    <p>
-                        This is an example description for a workplace.
-                    </p>
+                    <div class="card-content">
+                        <h3>MyEasyPharma</h3>
+                        <div>August 2024 – December 2024</div>
+                        <p>MyEasyPharma is a digital healthcare platform designed to simplify online medicine ordering and personal health management. It provides a seamless experience through a responsive website and mobile app, integrating AI-driven health chatbots to assist users in making informed healthcare decisions. As a Tech Lead, I contributed to developing a high-ranking SEO website, a shared backend for smooth app functionality, and an AI-powered chatbot to enhance user engagement.</p>
+                    </div>
                 </article>
-                <article>
+                <article onclick="window.open('https://drive.google.com/file/d/1d4NwG16Rkq1XnnwL0LUyzbFwyZ8O3dEw/view?usp=drive_link', '_blank')">
                     <figure>
-                        <div>
-                            <img src="imgs/workplace-2.jpg" alt="" width="100%"/>
-                            <figcaption>
-                                workplace-2
-                            </figcaption>
-                        </div>
+                        <img src="imgs/workplace/workplace-2 (1).jpg" alt="MyEasyPharma" width="100%"/>
                     </figure>
-                    <h3>Workplace - 2</h3>
-                    <div>2000-2020</div>
-                    <p>
-                        This is an example description for a workplace.
-                    </p>
+                    <div class="card-content">
+                        <h3>LetsTAG.in</h3>
+                        <div>June 2023 – August 2023</div>
+                        <p>letsTAG.in is a social platform that connects users through curated events, restaurant bookings, and social experiences. It aims to streamline event discovery and bookings with a user-friendly interface and a powerful backend. As a Backend Engineer, I helped design and deploy a robust API ecosystem, implemented secure authentication, and optimized the platform for seamless interactions.</p>
+                    </div>
                 </article>
-                <article>
+                <article onclick="window.open('https://drive.google.com/file/d/1i5FmTMhM2OSSHqCNhyZbnfPnbF5JkZKY/view?usp=drive_link', '_blank')">
                     <figure>
-                        <div>
-                            <img src="imgs/workplace-3.jpg" alt="" width="100%"/>
-                            <figcaption>
-                                workplace-3
-                            </figcaption>
-                        </div>
+                        <img src="imgs/workplace/workplace-3.jpg" alt="MyEasyPharma" width="100%"/>
                     </figure>
-                    <h3>Workplace - 3</h3>
-                    <div>2000-2020</div>
-                    <p>
-                        This is an example description for a workplace.
-                    </p>
+                    <div class="card-content">
+                        <h3>Teaching Assistant - Computer Programming</h3>
+                        <div>August 2024 – December 2024</div>
+                        <p>Mentored first-year students in C programming under Prof. Tejasvi Allhadi, conducted lab sessions, and guided them through coding fundamentals. Later, I developed an Automated Code Evaluation Tool using Python and OpenAI’s GPT-4 API, reducing grading time from 7 days to under 4 hours and improving efficiency for faculty and students.</p>
+                    </div>
                 </article>
+                <!-- Repeat similar structure for other work experiences -->
             </div>
         </section>
-        <!-- Needs to be changed -->
-        <!-- change div to a tag in the html  -->
-        <section id="projects" class="bento">
+
+        <!-- Projects Section -->
+        <section id="projects" class="work-experience container">
             <h2>
-                <small>
-                    Previous
-                </small>
+                <small>Previous</small>
                 Completed Projects
             </h2>
-            <div class="bento-grid">
-                <div class="bento-item">
-                    <img src="imgs/bento-1.jpg" alt="" width="100%"/>
-                </div>
-                <div class="bento-item"><img src="imgs/bento-2.jpg" alt="" width="100%"/></div>
-                <div class="bento-item"><img src="imgs/bento-3.jpg" alt="" width="100%"/></div>
-                <div class="bento-item"><img src="imgs/bento-4.jpg" alt="" width="100%"/></div>
-                <div class="bento-item"><img src="imgs/bento-5.jpg" alt="" width="100%"/></div>
-                <div class="bento-item"><img src="imgs/bento-6.jpg" alt="" width="100%"/></div>
+            <div class="jobs">
+                <article onclick="window.open('https://gym-app-xi-two.vercel.app/', '_blank')">
+                    <figure>
+                        <img src="imgs/project/project-1.png" alt="Gym App" width="100%"/>
+                    </figure>
+                    <div class="card-content">
+                        <h3>Gym App</h3>
+                        <h5>NodeJS | ReactJS | RapidAPI</h5>
+                        <p>A responsive React-based fitness app that uses RapidAPI to list exercises by muscle group and equipment, providing detailed instructions and animations.</p>
+                    </div>
+                </article>
+                <article onclick="window.open('https://github.com/MadhavBohra/uni_code_frontend', '_blank')">
+                    <figure>
+                        <img src="imgs/project/project-2.jpeg" alt="Gym App" width="100%"/>
+                    </figure>
+                    <div class="card-content">
+                        <h3>UniCode</h3>
+                        <h5>NextJS | Java | Springboot</h5>
+                        <p>UniCode is a secure testing platform with client and admin roles. Clients take tests, while admins monitor activities, track IP addresses, and detect irregularities in real time. Built for seamless exam security and integrity.</p>
+                    </div>
+                </article>
+                <article onclick="window.open('https://medium.com/@madhavbohra106/dcounderstanding-llms-rag-fine-tuning-and-my-experience-building-docusage-744d3587b835', '_blank')">
+                    <figure>
+                        <img src="imgs/project/project-3.png" alt="DocuSage App" width="100%"/>
+                    </figure>
+                    <div class="card-content">
+                        <h3>DocuSage</h3>
+                        <h5>Python | HTML | CSS | Javascript </h5>
+                        <p>DocuSage is an AI-powered PDF Q&A tool using Google Gemini and Retrieval-Augmented Generation (RAG). It allows users to upload PDFs (up to 20MB) and ask questions, providing accurate answers based on document content.</p>
+                    </div>
+                </article>
+                <article onclick="window.open('https://github.com/MadhavBohra/ai_analysis', '_blank')">
+                    <figure>
+                        <img src="imgs/project/project-4.png" alt="AI Hallucination Detector" width="100%"/>
+                    </figure>
+                    <div class="card-content">
+                        <h3>AI Hallucination Detector</h3>
+                        <h5>Python | HTML | CSS | Javascript | HuggingFace APIs</h5>
+                        <p>An advanced hallucination detection system that uses DeepSeek for response generation and Hugging Face's Vectra model to detect and flag AI-generated inaccuracies, ensuring reliable and factual outputs.</p>
+                    </div>
+                </article>
+                <article onclick="window.open('https://github.com/MadhavBohra/Automaded-Code-Evaluation-Tool', '_blank')">
+                    <figure>
+                        <img src="imgs/project/project-5.jpg" alt="Automated Code Evaluation Tool" width="100%"/>
+                    </figure>
+                    <div class="card-content">
+                        <h3>Automated Code Evaluation Tool</h3>
+                        <h5>Python | OpenAI API </h5>
+                        <p>A Python-based tool leveraging OpenAI's GPT-4 API to evaluate student code submissions, reducing grading time from 7 days to under 4 hours with efficient and accurate assessments. </p>
+                    </div>
+                </article>
+                <article onclick="window.open('https://github.com/MadhavBohra/WeatherApp', '_blank')">
+                    <figure>
+                        <img src="imgs/project/project-6.png" alt="Weather App" width="100%"/>
+                    </figure>
+                    <div class="card-content">
+                        <h3>Weather App</h3>
+                        <h5>HTML | CSS | Javascript </h5>
+                        <p>A simple weather application built to learn frontend development and API integration, using the OpenWeather API to fetch real-time weather data for any location. 🌦️🌍</p>
+                    </div>
+                </article>
+                
+                <!-- Repeat similar structure for other projects -->
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="container">
+            <h2>
+                <small>Get in Touch</small>
+                Contact Me
+            </h2>
+            <div class="contact-info">
+                <p><strong>Email:</strong> <a href="mailto:madhavbohra106@gmail.com">madhavbohra106@gmail.com</a></p>
+                <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/madhav-bohra-b81b6b248/" target="_blank">Madhav Bohra</a></p>
             </div>
         </section>
     </main>
+
+    <footer>
+        <p>&copy; 2025 Madhav Bohra. All Rights Reserved.</p>
+    </footer>
 </body>
 </html>
